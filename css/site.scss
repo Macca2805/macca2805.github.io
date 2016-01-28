@@ -163,3 +163,18 @@ section.hero small {
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+
+/* Bubbles */
+
+ul.bubbles {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.bubbles > li {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    padding: 1em 2em;
+    border: 2px solid $primary;
+}
