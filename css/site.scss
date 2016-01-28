@@ -1,0 +1,165 @@
+/* Colors */
+
+$pc-100: 60%;
+$pc-300: 25%;
+$pc-700: 25%;
+$pc-900: 60%;
+
+$black: #000000;
+$white: #ffffff;
+
+$grey: #404040;
+$primary: #00BCD4;
+$secondary: #FF5722;
+
+$grey-100: lighten($grey, $pc-100);
+$grey-300: lighten($grey, $pc-300);
+$grey-700: darken($grey, $pc-700);
+$grey-900: darken($grey, $pc-900);
+
+$primary-100: lighten($primary, $pc-100);
+$primary-300: lighten($primary, $pc-300);
+$primary-700: darken($primary, $pc-700);
+$primary-900: darken($primary, $pc-900);
+
+$secondary-100: lighten($secondary, $pc-100);
+$secondary-300: lighten($secondary, $pc-300);
+$secondary-700: darken($secondary, $pc-700);
+$secondary-900: darken($secondary, $pc-900);
+
+/* Fonts */
+
+$font-body: "Fira Sans", sans-serif;
+$font-heading: "Playfair Display", monospace;
+
+/* Layout */
+
+body {
+    background: $white;
+    font-family: $font-body;
+    font-size: 135%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    letter-spacing: 0.025em;
+}
+
+article {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1150px;
+}
+
+section {
+    margin: 1em 0 0 0;
+    display: block;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.5em 0 0.5em 0;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    font-family: $font-heading;
+    letter-spacing: 0em;
+}
+
+h3,
+h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.7em;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.15384615;
+}
+
+h3 {
+    font-size: 1.125em;
+    line-height: 1.13636364;
+}
+
+h4 {
+    font-size: 1.075em;
+    line-height: 1.11111111;
+}
+
+@media (min-width:43.75em) {
+
+    h1 {
+        font-size: 2.1em;
+        line-height: 1.125;
+    }
+
+    h2 {
+        font-size: 1.7em;
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 1.15em;
+        line-height: 1.25;
+    }
+}
+
+@media (min-width:56.25em) {
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.05;
+    }
+
+    h2 {
+        font-size: 1.9em;
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 1.25em;
+        line-height: 1.25;
+    }
+
+    h4 {
+        line-height: 1.22222222;
+    }
+}
+
+small {
+    margin: 0.3em 0;
+    color: $grey;
+    display: block;
+    font-weight: 400;
+}
+
+/* Text */
+p {
+    margin: 1em 0 2em 0;
+    line-height: 1.5em;
+}
+
+/* Hero */
+
+section.hero {
+    min-height: 100%;
+}
+
+section.hero small {
+    font-size: 0.5em;
+    font-family: $font-body;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
