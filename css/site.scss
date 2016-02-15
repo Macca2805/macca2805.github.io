@@ -1,31 +1,35 @@
 /* Colors */
 
-$pc-100: 60%;
-$pc-300: 25%;
-$pc-700: 25%;
-$pc-900: 60%;
+$pc-100: 10%;
+$pc-300: 20%;
+$pc-500: 35%;
+$pc-700: 50%;
+$pc-900: 75%;
 
-$black: #000000;
-$white: #ffffff;
+$foreground: #EFF1F3;
+$background: #223843;
 
-$grey: #404040;
-$primary: #00BCD4;
-$secondary: #FF5722;
+$black: #000;
+$white: #fff;
 
-$grey-100: lighten($grey, $pc-100);
-$grey-300: lighten($grey, $pc-300);
-$grey-700: darken($grey, $pc-700);
-$grey-900: darken($grey, $pc-900);
+$greys: ();
+$tones: $pc-100, $pc-300, $pc-500, $pc-700, $pc-900;
 
-$primary-100: lighten($primary, $pc-100);
-$primary-300: lighten($primary, $pc-300);
-$primary-700: darken($primary, $pc-700);
-$primary-900: darken($primary, $pc-900);
+@each $t in $tones {
+    $ti: index($tones, $t);
+    $greys: append($greys, #{lighten($background, $t)});
+}
 
-$secondary-100: lighten($secondary, $pc-100);
-$secondary-300: lighten($secondary, $pc-300);
-$secondary-700: darken($secondary, $pc-700);
-$secondary-900: darken($secondary, $pc-900);
+$color-1: #EA3546;
+$color-2: #F86624;
+$color-3: #F9C80E;
+$color-4: #52B788;
+$color-5: #43BCCD;
+$color-6: #662E9B;
+
+$colors: $color-1, $color-2, $color-3, $color-4, $color-5, $color-6;
+
+$timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 /* Fonts */
 
@@ -35,25 +39,38 @@ $font-heading: "Playfair Display", monospace;
 /* Layout */
 
 body {
-    background: $white;
+    color: $foreground;
+    background: $background;
     font-family: $font-body;
     font-size: 135%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    width: 100%;
     height: 100%;
     min-height: 100%;
     letter-spacing: 0.025em;
 }
 
 article {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
     width: 100%;
-    max-width: 1150px;
+    height: 100%;
+}
+
+header,
+section {
+    max-width: 1050px;
 }
 
 section {
-    margin: 1em 0 0 0;
-    display: block;
+    display: none;
 }
 
 /* Headings */
@@ -63,6 +80,7 @@ h2,
 h3,
 h4 {
     margin: 1.5em 0 0.5em 0;
+    animation: header-animation 1000ms $timing-function;
 }
 
 h1,
@@ -79,26 +97,184 @@ h4 {
 }
 
 h1 {
-    font-size: 1.7em;
-    line-height: 1.25;
+    font-size: 2.5em;
+    line-height: 1.05;
 }
 
 h2 {
-    font-size: 1.5em;
-    line-height: 1.15384615;
+    font-size: 1.9em;
+    line-height: 1.25;
 }
 
 h3 {
-    font-size: 1.125em;
-    line-height: 1.13636364;
+    font-size: 1.25em;
+    line-height: 1.25;
 }
 
 h4 {
-    font-size: 1.075em;
-    line-height: 1.11111111;
+    line-height: 1.22222222;
 }
 
-@media (min-width:43.75em) {
+small {
+    margin: 0.3em 0;
+    color: nth($greys, 2);
+    display: block;
+    font-weight: 400;
+}
+
+@keyframes header-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+        
+    50% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Text */
+
+p {
+    margin: 1em 0 2em 0;
+    line-height: 1.5em;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+header h1,
+header h2 {
+    margin: 0.5em 0 0;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header h2 {
+    color: nth($greys, 2);
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: $font-body;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Bubbles */
+
+ul.bubbles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 1.5em 0;
+}
+
+ul.bubbles > li {
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 500ms $timing-function;
+}
+
+ul.bubbles > li:hover {
+    box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@each $c in $colors {
+    $index: index($colors, $c);
+    ul.bubbles > li:nth-child(#{$index}) {
+        background: #{$c};
+        animation: bubble-animation #{1000 + $index * 150}ms $timing-function;
+    }
+}
+
+@keyframes bubble-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skills */
+
+ul.skills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.skills > li {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    padding: 1em 2em;
+    border: 2px solid $color-1;
+}
+
+/* Repsonsive */
+
+@media (max-width:43.75em) {    
+
+    h1 {
+        font-size: 1.7em;
+        line-height: 1.25;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        line-height: 1.15384615;
+    }
+
+    h3 {
+        font-size: 1.125em;
+        line-height: 1.13636364;
+    }
+
+    h4 {
+        font-size: 1.075em;
+        line-height: 1.11111111;
+    }
+}
+
+@media (max-width:56.25em) {
 
     h1 {
         font-size: 2.1em;
@@ -114,67 +290,4 @@ h4 {
         font-size: 1.15em;
         line-height: 1.25;
     }
-}
-
-@media (min-width:56.25em) {
-
-    h1 {
-        font-size: 2.5em;
-        line-height: 1.05;
-    }
-
-    h2 {
-        font-size: 1.9em;
-        line-height: 1.25;
-    }
-
-    h3 {
-        font-size: 1.25em;
-        line-height: 1.25;
-    }
-
-    h4 {
-        line-height: 1.22222222;
-    }
-}
-
-small {
-    margin: 0.3em 0;
-    color: $grey;
-    display: block;
-    font-weight: 400;
-}
-
-/* Text */
-p {
-    margin: 1em 0 2em 0;
-    line-height: 1.5em;
-}
-
-/* Hero */
-
-section.hero {
-    min-height: 100%;
-}
-
-section.hero small {
-    font-size: 0.5em;
-    font-family: $font-body;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-/* Bubbles */
-
-ul.bubbles {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul.bubbles > li {
-    display: inline-block;
-    margin: 0 1em 1em 0;
-    padding: 1em 2em;
-    border: 2px solid $primary;
 }
