@@ -2,13 +2,15 @@
     <header>
         <h1>Macklin Hartley</h1>
         <h2>Web Developer and User Experience Analyst</h2>
-        <ul class="bubbles">
-            <li>About Me</li>
-            <li>Skills</li>
-            <li>Employment</li>
-            <li>Experience</li>
-            <li>Certification</li>
-            <li>Education</li>
-        </ul>
     </header>
+    <section>
+        <ul class="bubbles">
+            <li ng-click="goToPage('/about')">About Me</li>
+            <li ng-click="goToPage('/skills')">Skills</li>
+            <li ng-click="goToPage('/employment')">Employment</li>
+            <li ng-click="goToPage('/experience')">Experience</li>
+            <li ng-click="goToPage('/certification')">Certification</li>
+            <li ng-click="goToPage('/education')">Education</li>
+        </ul>
+    </section>
 </article>

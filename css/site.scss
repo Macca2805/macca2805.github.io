@@ -70,7 +70,43 @@ section {
 }
 
 section {
-    display: none;
+    margin: 4em;
+}
+
+@for $i from 1 through 36 {
+    header :nth-child(#{$i}),
+    section :nth-child(#{$i}) {
+        animation: document-animation #{500 + ($i * 150)}ms $timing-function;
+    }
+}
+
+/* Pages */
+
+.template-container.ng-enter,
+.template-container.ng-leave {
+    transition: all 500ms $timing-function;
+}
+
+.template-container.ng-enter {
+    opacity: 0;
+}
+.template-container.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.template-container.ng-leave {
+    opacity: 1;
+}
+.template-container.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+$pages: 'about', 'skills', 'employment', 'experience', 'certification', 'education';
+@each $p in $pages {
+    $index: index($pages, $p);
+    article.#{$p} {
+        background: nth($colors, $index);
+    }
 }
 
 /* Headings */
@@ -79,8 +115,7 @@ h1,
 h2,
 h3,
 h4 {
-    margin: 1.5em 0 0.5em 0;
-    animation: header-animation 1000ms $timing-function;
+    margin: 0.5em 0 0 0;
 }
 
 h1,
@@ -122,7 +157,7 @@ small {
     font-weight: 400;
 }
 
-@keyframes header-animation {
+@keyframes document-animation {
     0% {
         opacity: 0;
         transform: translateY(100px);
@@ -142,7 +177,7 @@ small {
 /* Text */
 
 p {
-    margin: 1em 0 2em 0;
+    margin: 2em 0 1em 0;
     line-height: 1.5em;
 }
 
@@ -219,30 +254,27 @@ ul.bubbles > li:hover {
 
 @keyframes bubble-animation {
     0% {
-        opacity: 0;
-        transform: translateY(200px);
+        transform: scale(0);
     }
 
     50% {
-        opacity: 0;
-        transform: translateY(200px);
+        transform: scale(0);
     }
 
     100% {
-        opacity: 1;
-        transform: translateY(0);
+        transform: scale(1);
     }
 }
 
 /* Skills */
 
-ul.skills {
+ul.skills-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul.skills > li {
+ul.skills-list > li {
     display: inline-block;
     margin: 0 1em 1em 0;
     padding: 1em 2em;

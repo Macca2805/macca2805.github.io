@@ -30,15 +30,193 @@ section {
   max-width: 1050px; }
 
 section {
-  display: none; }
+  margin: 4em; }
+
+header :nth-child(1),
+section :nth-child(1) {
+  animation: document-animation 650ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(2),
+section :nth-child(2) {
+  animation: document-animation 800ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(3),
+section :nth-child(3) {
+  animation: document-animation 950ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(4),
+section :nth-child(4) {
+  animation: document-animation 1100ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(5),
+section :nth-child(5) {
+  animation: document-animation 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(6),
+section :nth-child(6) {
+  animation: document-animation 1400ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(7),
+section :nth-child(7) {
+  animation: document-animation 1550ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(8),
+section :nth-child(8) {
+  animation: document-animation 1700ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(9),
+section :nth-child(9) {
+  animation: document-animation 1850ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(10),
+section :nth-child(10) {
+  animation: document-animation 2000ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(11),
+section :nth-child(11) {
+  animation: document-animation 2150ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(12),
+section :nth-child(12) {
+  animation: document-animation 2300ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(13),
+section :nth-child(13) {
+  animation: document-animation 2450ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(14),
+section :nth-child(14) {
+  animation: document-animation 2600ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(15),
+section :nth-child(15) {
+  animation: document-animation 2750ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(16),
+section :nth-child(16) {
+  animation: document-animation 2900ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(17),
+section :nth-child(17) {
+  animation: document-animation 3050ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(18),
+section :nth-child(18) {
+  animation: document-animation 3200ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(19),
+section :nth-child(19) {
+  animation: document-animation 3350ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(20),
+section :nth-child(20) {
+  animation: document-animation 3500ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(21),
+section :nth-child(21) {
+  animation: document-animation 3650ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(22),
+section :nth-child(22) {
+  animation: document-animation 3800ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(23),
+section :nth-child(23) {
+  animation: document-animation 3950ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(24),
+section :nth-child(24) {
+  animation: document-animation 4100ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(25),
+section :nth-child(25) {
+  animation: document-animation 4250ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(26),
+section :nth-child(26) {
+  animation: document-animation 4400ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(27),
+section :nth-child(27) {
+  animation: document-animation 4550ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(28),
+section :nth-child(28) {
+  animation: document-animation 4700ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(29),
+section :nth-child(29) {
+  animation: document-animation 4850ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(30),
+section :nth-child(30) {
+  animation: document-animation 5000ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(31),
+section :nth-child(31) {
+  animation: document-animation 5150ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(32),
+section :nth-child(32) {
+  animation: document-animation 5300ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(33),
+section :nth-child(33) {
+  animation: document-animation 5450ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(34),
+section :nth-child(34) {
+  animation: document-animation 5600ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(35),
+section :nth-child(35) {
+  animation: document-animation 5750ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+header :nth-child(36),
+section :nth-child(36) {
+  animation: document-animation 5900ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+/* Pages */
+.template-container.ng-enter,
+.template-container.ng-leave {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+.template-container.ng-enter {
+  opacity: 0; }
+
+.template-container.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.template-container.ng-leave {
+  opacity: 1; }
+
+.template-container.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+article.about {
+  background: #EA3546; }
+
+article.skills {
+  background: #F86624; }
+
+article.employment {
+  background: #F9C80E; }
+
+article.experience {
+  background: #52B788; }
+
+article.certification {
+  background: #43BCCD; }
+
+article.education {
+  background: #662E9B; }
 
 /* Headings */
 h1,
 h2,
 h3,
 h4 {
-  margin: 1.5em 0 0.5em 0;
-  animation: header-animation 1000ms cubic-bezier(0.19, 1, 0.22, 1); }
+  margin: 0.5em 0 0 0; }
 
 h1,
 h2 {
@@ -72,7 +250,7 @@ small {
   display: block;
   font-weight: 400; }
 
-@keyframes header-animation {
+@keyframes document-animation {
   0% {
     opacity: 0;
     transform: translateY(100px); }
@@ -85,7 +263,7 @@ small {
 
 /* Text */
 p {
-  margin: 1em 0 2em 0;
+  margin: 2em 0 1em 0;
   line-height: 1.5em; }
 
 /* Header */
@@ -168,22 +346,19 @@ ul.bubbles > li:nth-child(6) {
 
 @keyframes bubble-animation {
   0% {
-    opacity: 0;
-    transform: translateY(200px); }
+    transform: scale(0); }
   50% {
-    opacity: 0;
-    transform: translateY(200px); }
+    transform: scale(0); }
   100% {
-    opacity: 1;
-    transform: translateY(0); } }
+    transform: scale(1); } }
 
 /* Skills */
-ul.skills {
+ul.skills-list {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-ul.skills > li {
+ul.skills-list > li {
   display: inline-block;
   margin: 0 1em 1em 0;
   padding: 1em 2em;

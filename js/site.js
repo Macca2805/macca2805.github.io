@@ -1,5 +1,5 @@
 /* global angular */
-var app = angular.module("macklinMeWebApp", []);
+var app = angular.module("macklinMeWebApp", ["ngAnimate"]);
 
 /* main controller */
 app.controller("MainController", ["$scope",
@@ -7,6 +7,9 @@ app.controller("MainController", ["$scope",
         
         $scope.templateUrl = "pages/home.html";
         
+        $scope.goToPage = function (pageName) {
+            $scope.templateUrl = "pages" + pageName + ".html";
+        }
     }]);
         
 /* home controller */
