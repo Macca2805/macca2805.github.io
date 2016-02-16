@@ -1,14 +1,21 @@
 /* global angular */
-var app = angular.module("macklinMeWebApp", ["ngAnimate"]);
+var app = angular.module("macklinMeWebApp", ["webicon", "ngAnimate"]);
 
 /* main controller */
 app.controller("MainController", ["$scope",
     function ($scope) {
         
-        $scope.templateUrl = "pages/home.html";
+        $scope.defaultUrl = "pages/home.html"
+        $scope.templateUrl = $scope.defaultUrl;
+        $scope.hideBackButton = true;
         
         $scope.goToPage = function (pageName) {
-            $scope.templateUrl = "pages" + pageName + ".html";
+            
+            var url = "pages" + pageName + ".html";
+            
+            $scope.templateUrl = url;
+            
+            $scope.hideBackButton = url === $scope.defaultUrl;
         }
     }]);
         

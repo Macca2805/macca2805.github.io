@@ -2,30 +2,29 @@
 
 $pc-100: 10%;
 $pc-300: 20%;
-$pc-500: 35%;
-$pc-700: 50%;
-$pc-900: 75%;
-
-$foreground: #EFF1F3;
-$background: #223843;
+$pc-500: 30%;
+$pc-700: 40%;
+$pc-900: 50%;
 
 $black: #000;
 $white: #fff;
+
+$background: #223843;
 
 $greys: ();
 $tones: $pc-100, $pc-300, $pc-500, $pc-700, $pc-900;
 
 @each $t in $tones {
     $ti: index($tones, $t);
-    $greys: append($greys, #{lighten($background, $t)});
+    $greys: append($greys, #{lighten($black, $t)});
 }
 
-$color-1: #EA3546;
+$color-1: #e74c3c;
 $color-2: #F86624;
-$color-3: #F9C80E;
+$color-3: #f1c40f;
 $color-4: #52B788;
-$color-5: #43BCCD;
-$color-6: #662E9B;
+$color-5: #3498db;
+$color-6: #9b59b6;
 
 $colors: $color-1, $color-2, $color-3, $color-4, $color-5, $color-6;
 
@@ -39,7 +38,6 @@ $font-heading: "Playfair Display", monospace;
 /* Layout */
 
 body {
-    color: $foreground;
     background: $background;
     font-family: $font-body;
     font-size: 135%;
@@ -53,15 +51,17 @@ body {
 }
 
 article {
+    color: $white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
 }
 
 header,
@@ -70,13 +70,13 @@ section {
 }
 
 section {
-    margin: 4em;
+    padding: 4em;
 }
 
 @for $i from 1 through 36 {
     header :nth-child(#{$i}),
     section :nth-child(#{$i}) {
-        animation: document-animation #{500 + ($i * 150)}ms $timing-function;
+        animation: document-animation #{500 + ($i * 50)}ms $timing-function;
     }
 }
 
@@ -106,6 +106,17 @@ $pages: 'about', 'skills', 'employment', 'experience', 'certification', 'educati
     $index: index($pages, $p);
     article.#{$p} {
         background: nth($colors, $index);
+        color: darken(nth($colors, $index), $pc-500);
+    }
+    
+    article.#{$p} h1, 
+    article.#{$p} h2 {
+        color: $black;
+    }
+    
+    article.#{$p} h3, 
+    article.#{$p} h4 {
+        color: darken(nth($colors, $index), $pc-700);
     }
 }
 
@@ -115,7 +126,7 @@ h1,
 h2,
 h3,
 h4 {
-    margin: 0.5em 0 0 0;
+    margin: 1em 0;
 }
 
 h1,
@@ -132,17 +143,17 @@ h4 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     line-height: 1.05;
 }
 
 h2 {
-    font-size: 1.9em;
+    font-size: 2.5em;
     line-height: 1.25;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     line-height: 1.25;
 }
 
@@ -168,7 +179,7 @@ small {
     }
     
     100% {
-        opacity: 1;
+        opacity: auto;
         transform: translateY(0);
     }
 }
@@ -176,7 +187,7 @@ small {
 /* Text */
 
 p {
-    margin: 1em 0 2em 0;
+    margin: 1em 0;
     line-height: 1.5em;
 }
 
@@ -198,16 +209,40 @@ header h2 {
 }
 
 header h1 {
+    color: $white;
     font-size: 3em;
 }
 
 header h2 {
-    color: nth($greys, 2);
+    color: lighten($background, $pc-500);
     font-size: 1.5em;
     font-weight: normal;
     font-family: $font-body;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+/* Back Button */
+
+.back-button,
+.back-button webicon {
+    width: 4em;
+    height: 4em;
+}
+
+.back-button {
+    position: fixed;
+    top: 2em;
+    right: 3em;
+    color: $black;
+}
+
+.back-button:hover {
+    cursor: pointer;
+}
+
+.back-button.hidden {
+    display: none;
 }
 
 /* Bubbles */
@@ -229,6 +264,7 @@ ul.bubbles > li {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2em;
     width: 250px;
     height: 250px;
     margin: 15px;
@@ -247,7 +283,7 @@ ul.bubbles > li:hover {
     $index: index($colors, $c);
     ul.bubbles > li:nth-child(#{$index}) {
         background: #{$c};
-        animation: bubble-animation #{1000 + $index * 150}ms $timing-function;
+        animation: bubble-animation #{1000 + $index * 100}ms $timing-function;
     }
 }
 
@@ -277,7 +313,8 @@ ul.skills-list > li {
     display: inline-block;
     margin: 0 1em 1em 0;
     padding: 1em 2em;
-    border: 2px solid $color-1;
+    color: $black;
+    background: lighten($color-2, $pc-300);
 }
 
 /* Repsonsive */

@@ -2,7 +2,6 @@
 /* Fonts */
 /* Layout */
 body {
-  color: #EFF1F3;
   background: #223843;
   font-family: "Fira Sans", sans-serif;
   font-size: 135%;
@@ -15,166 +14,168 @@ body {
   letter-spacing: 0.025em; }
 
 article {
+  color: #fff;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start;
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow-y: scroll; }
 
 header,
 section {
   max-width: 1050px; }
 
 section {
-  margin: 4em; }
+  padding: 4em; }
 
 header :nth-child(1),
 section :nth-child(1) {
-  animation: document-animation 650ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 550ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(2),
 section :nth-child(2) {
-  animation: document-animation 800ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 600ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(3),
 section :nth-child(3) {
-  animation: document-animation 950ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 650ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(4),
 section :nth-child(4) {
-  animation: document-animation 1100ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 700ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(5),
 section :nth-child(5) {
-  animation: document-animation 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 750ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(6),
 section :nth-child(6) {
-  animation: document-animation 1400ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 800ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(7),
 section :nth-child(7) {
-  animation: document-animation 1550ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 850ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(8),
 section :nth-child(8) {
-  animation: document-animation 1700ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 900ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(9),
 section :nth-child(9) {
-  animation: document-animation 1850ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 950ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(10),
 section :nth-child(10) {
-  animation: document-animation 2000ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1000ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(11),
 section :nth-child(11) {
-  animation: document-animation 2150ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1050ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(12),
 section :nth-child(12) {
-  animation: document-animation 2300ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1100ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(13),
 section :nth-child(13) {
-  animation: document-animation 2450ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1150ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(14),
 section :nth-child(14) {
-  animation: document-animation 2600ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1200ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(15),
 section :nth-child(15) {
-  animation: document-animation 2750ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(16),
 section :nth-child(16) {
-  animation: document-animation 2900ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1300ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(17),
 section :nth-child(17) {
-  animation: document-animation 3050ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1350ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(18),
 section :nth-child(18) {
-  animation: document-animation 3200ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1400ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(19),
 section :nth-child(19) {
-  animation: document-animation 3350ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1450ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(20),
 section :nth-child(20) {
-  animation: document-animation 3500ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1500ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(21),
 section :nth-child(21) {
-  animation: document-animation 3650ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1550ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(22),
 section :nth-child(22) {
-  animation: document-animation 3800ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1600ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(23),
 section :nth-child(23) {
-  animation: document-animation 3950ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1650ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(24),
 section :nth-child(24) {
-  animation: document-animation 4100ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1700ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(25),
 section :nth-child(25) {
-  animation: document-animation 4250ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1750ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(26),
 section :nth-child(26) {
-  animation: document-animation 4400ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1800ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(27),
 section :nth-child(27) {
-  animation: document-animation 4550ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1850ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(28),
 section :nth-child(28) {
-  animation: document-animation 4700ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1900ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(29),
 section :nth-child(29) {
-  animation: document-animation 4850ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 1950ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(30),
 section :nth-child(30) {
-  animation: document-animation 5000ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 2000ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(31),
 section :nth-child(31) {
-  animation: document-animation 5150ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 2050ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(32),
 section :nth-child(32) {
-  animation: document-animation 5300ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 2100ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(33),
 section :nth-child(33) {
-  animation: document-animation 5450ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 2150ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(34),
 section :nth-child(34) {
-  animation: document-animation 5600ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 2200ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(35),
 section :nth-child(35) {
-  animation: document-animation 5750ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 2250ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 header :nth-child(36),
 section :nth-child(36) {
-  animation: document-animation 5900ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: document-animation 2300ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 /* Pages */
 .template-container.ng-enter,
@@ -194,29 +195,83 @@ section :nth-child(36) {
   opacity: 0; }
 
 article.about {
-  background: #EA3546; }
+  background: #e74c3c;
+  color: #7b190f; }
+
+article.about h1,
+article.about h2 {
+  color: #000; }
+
+article.about h3,
+article.about h4 {
+  color: #4d100a; }
 
 article.skills {
-  background: #F86624; }
+  background: #F86624;
+  color: #7f2a04; }
+
+article.skills h1,
+article.skills h2 {
+  color: #000; }
+
+article.skills h3,
+article.skills h4 {
+  color: #4e1a02; }
 
 article.employment {
-  background: #F9C80E; }
+  background: #f1c40f;
+  color: #614f06; }
+
+article.employment h1,
+article.employment h2 {
+  color: #000; }
+
+article.employment h3,
+article.employment h4 {
+  color: #312803; }
 
 article.experience {
-  background: #52B788; }
+  background: #52B788;
+  color: #214f3a; }
+
+article.experience h1,
+article.experience h2 {
+  color: #000; }
+
+article.experience h3,
+article.experience h4 {
+  color: #122b1f; }
 
 article.certification {
-  background: #43BCCD; }
+  background: #3498db;
+  color: #124364; }
+
+article.certification h1,
+article.certification h2 {
+  color: #000; }
+
+article.certification h3,
+article.certification h4 {
+  color: #0a2639; }
 
 article.education {
-  background: #662E9B; }
+  background: #9b59b6;
+  color: #452452; }
+
+article.education h1,
+article.education h2 {
+  color: #000; }
+
+article.education h3,
+article.education h4 {
+  color: #27142f; }
 
 /* Headings */
 h1,
 h2,
 h3,
 h4 {
-  margin: 0.5em 0 0 0; }
+  margin: 1em 0; }
 
 h1,
 h2 {
@@ -230,15 +285,15 @@ h4 {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   line-height: 1.05; }
 
 h2 {
-  font-size: 1.9em;
+  font-size: 2.5em;
   line-height: 1.25; }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   line-height: 1.25; }
 
 h4 {
@@ -257,12 +312,12 @@ small {
     opacity: 0;
     transform: translateY(100px); }
   100% {
-    opacity: 1;
+    opacity: auto;
     transform: translateY(0); } }
 
 /* Text */
 p {
-  margin: 1em 0 2em 0;
+  margin: 1em 0;
   line-height: 1.5em; }
 
 /* Header */
@@ -280,15 +335,34 @@ header h2 {
   margin: 0.5em 0 0; }
 
 header h1 {
+  color: #fff;
   font-size: 3em; }
 
 header h2 {
-  color: #447187;
+  color: #568da8;
   font-size: 1.5em;
   font-weight: normal;
   font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
+
+/* Back Button */
+.back-button,
+.back-button webicon {
+  width: 4em;
+  height: 4em; }
+
+.back-button {
+  position: fixed;
+  top: 2em;
+  right: 3em;
+  color: #000; }
+
+.back-button:hover {
+  cursor: pointer; }
+
+.back-button.hidden {
+  display: none; }
 
 /* Bubbles */
 ul.bubbles {
@@ -307,6 +381,7 @@ ul.bubbles > li {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
   width: 250px;
   height: 250px;
   margin: 15px;
@@ -320,28 +395,28 @@ ul.bubbles > li:hover {
   transform: scale(1.05); }
 
 ul.bubbles > li:nth-child(1) {
-  background: #EA3546;
-  animation: bubble-animation 1150ms cubic-bezier(0.19, 1, 0.22, 1); }
+  background: #e74c3c;
+  animation: bubble-animation 1100ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 ul.bubbles > li:nth-child(2) {
   background: #F86624;
-  animation: bubble-animation 1300ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: bubble-animation 1200ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 ul.bubbles > li:nth-child(3) {
-  background: #F9C80E;
-  animation: bubble-animation 1450ms cubic-bezier(0.19, 1, 0.22, 1); }
+  background: #f1c40f;
+  animation: bubble-animation 1300ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 ul.bubbles > li:nth-child(4) {
   background: #52B788;
-  animation: bubble-animation 1600ms cubic-bezier(0.19, 1, 0.22, 1); }
+  animation: bubble-animation 1400ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 ul.bubbles > li:nth-child(5) {
-  background: #43BCCD;
-  animation: bubble-animation 1750ms cubic-bezier(0.19, 1, 0.22, 1); }
+  background: #3498db;
+  animation: bubble-animation 1500ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 ul.bubbles > li:nth-child(6) {
-  background: #662E9B;
-  animation: bubble-animation 1900ms cubic-bezier(0.19, 1, 0.22, 1); }
+  background: #9b59b6;
+  animation: bubble-animation 1600ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 @keyframes bubble-animation {
   0% {
@@ -361,7 +436,8 @@ ul.skills-list > li {
   display: inline-block;
   margin: 0 1em 1em 0;
   padding: 1em 2em;
-  border: 2px solid #EA3546; }
+  color: #000;
+  background: #fbab87; }
 
 /* Repsonsive */
 @media (max-width: 43.75em) {
