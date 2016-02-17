@@ -3,7 +3,7 @@
 /* Layout */
 body {
   font-size: 135%;
-  overflow: scroll;
+  overflow-y: scroll;
   background: #223843;
   font-family: "Fira Sans", sans-serif;
   margin: 0;
@@ -354,7 +354,7 @@ header h2 {
 .back-button {
   position: fixed;
   top: 2em;
-  right: 3em;
+  right: 2em;
   color: #000; }
 
 .back-button:hover {
@@ -475,8 +475,20 @@ ul.skills-list > li {
     font-size: 110%; }
   ul.bubbles > li {
     width: 150px;
-    height: 150px; } }
+    height: 150px; }
+  .back-button,
+  .back-button webicon {
+    width: 25px;
+    height: 25px; }
+  .back-button {
+    top: 1em;
+    right: 1em; } }
 
 @media (max-width: 43.75em) {
   body {
-    font-size: 100%; } }
+    font-size: 100%; }
+  section {
+    padding: 2em; }
+  ul.bubbles > li {
+    width: 125px;
+    height: 125px; } }
