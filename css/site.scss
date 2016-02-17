@@ -283,7 +283,7 @@ ul.bubbles > li:hover {
     $index: index($colors, $c);
     ul.bubbles > li:nth-child(#{$index}) {
         background: #{$c};
-        animation: bubble-animation #{1000 + $index * 100}ms $timing-function;
+        animation: bubble-animation #{750 + $index * 100}ms $timing-function;
     }
 }
 
