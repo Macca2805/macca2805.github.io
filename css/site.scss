@@ -9,7 +9,7 @@ $pc-900: 50%;
 $black: #000;
 $white: #fff;
 
-$background: #223843;
+$background: $white;
 
 $greys: ();
 $tones: $pc-100, $pc-300, $pc-500, $pc-700, $pc-900;
@@ -38,7 +38,7 @@ $font-heading: "Playfair Display", monospace;
 /* Layout */
 
 body {
-    font-size: 135%;
+    font-size: 130%;
     overflow-y: scroll;
     background: $background;
     font-family: $font-body;
@@ -61,11 +61,6 @@ article {
     position: absolute;
     width: 100%;
     min-height: 100%;
-}
-
-header,
-section {
-    max-width: 1050px;
 }
 
 section {
@@ -166,6 +161,15 @@ small {
     font-weight: 400;
 }
 
+ul {
+    padding-left: 15px;
+    margin: 1em 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
 @keyframes document-animation {
     0% {
         opacity: 0;
@@ -188,37 +192,6 @@ small {
 p {
     margin: 1em 0;
     line-height: 1.5em;
-}
-
-/* Header */
-
-header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
-header h1,
-header h2 {
-    margin: 0.5em 0 0;
-}
-
-header h1 {
-    color: $white;
-    font-size: 3em;
-}
-
-header h2 {
-    color: lighten($background, $pc-500);
-    font-size: 1.5em;
-    font-weight: normal;
-    font-family: $font-body;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
 }
 
 /* Back Button */
@@ -274,7 +247,36 @@ ul.social > li > a webicon {
 
 /* Bubbles */
 
-ul.bubbles {
+.bubbles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.bubbles h1,
+.bubbles h2 {
+    margin: 0.5em 0 0;
+}
+
+.bubbles h1 {
+    color: $black;
+    font-size: 1.25em;
+}
+
+.bubbles h2 {
+    color: lighten($black, $pc-900);
+    font-size: 1em;
+    font-weight: normal;
+    font-family: $font-body;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.bubbles {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -286,7 +288,7 @@ ul.bubbles {
     padding: 1.5em 0;
 }
 
-ul.bubbles > li {
+.bubbles > div {
     color: $black;
     display: flex;
     justify-content: center;
@@ -295,12 +297,13 @@ ul.bubbles > li {
     width: 250px;
     height: 250px;
     margin: 15px;
-    border-radius: 50%;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 500ms $timing-function;
+    border-radius: 0.25em;
+    border: 1px solid darken($white, $pc-100);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0.24);
+    transition: all 500ms $timing-function;
 }
 
-ul.bubbles > li:hover {
+.bubbles > div:hover {
     box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
     cursor: pointer;
     transform: scale(1.05);
@@ -308,9 +311,9 @@ ul.bubbles > li:hover {
 
 @each $c in $colors {
     $index: index($colors, $c);
-    ul.bubbles > li:nth-child(#{$index}) {
-        background: #{$c};
-        animation: bubble-animation #{750 + $index * 100}ms $timing-function;
+    .bubbles > div:nth-child(#{$index}) {
+        //background: #{$c};
+        animation: bubble-animation #{750 + $index * 150}ms $timing-function;
     }
 }
 

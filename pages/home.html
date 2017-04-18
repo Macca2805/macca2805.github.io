@@ -1,18 +1,20 @@
 <article ng-controller="HomeController">
     <section>
         <header>
-            <h1>Macklin Hartley</h1>
-            <h2>Web Developer and User Experience Analyst</h2>
         </header>
 
-        <ul class="bubbles">
-            <li ng-click="goToPage('/about')">About Me</li>
-            <li ng-click="goToPage('/skills')">Skills</li>
-            <li ng-click="goToPage('/employment')">Employment</li>
-            <li ng-click="goToPage('/experience')">Experience</li>
-            <li ng-click="goToPage('/certification')">Certification</li>
-            <li ng-click="goToPage('/education')">Education</li>
-        </ul>
+        <div class="bubbles">
+            <div>                
+                <h1>Macklin Hartley</h1>
+                <h2>Web Developer and User Experience Analyst</h2>
+            </div>
+            <div ng-click="goToPage('/about')">About Me</div>
+            <div ng-click="goToPage('/skills')">Skills</div>
+            <div ng-click="goToPage('/employment')">Employment</div>
+            <div ng-click="goToPage('/experience')">Experience</div>
+            <div ng-click="goToPage('/certification')">Certification</div>
+            <div ng-click="goToPage('/education')">Education</div>
+        </div>
 
         <ul class="social">
             <li>
