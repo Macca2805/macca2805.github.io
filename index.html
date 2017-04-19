@@ -6,23 +6,142 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Scripts -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.min.js"></script>
-    <script type="text/javascript" src="//cdn.rawgit.com/icons8/bower-webicon/v0.10.7/angular-webicon.min.js"></script>
     <script type="text/javascript" src="js/site.js"></script>
 
     <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display:700|Work+Sans:400,700">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Carme:400,700" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/site.css" />
 </head>
 
-<body ng-controller="MainController">
-    <div ng-include="templateUrl" class="template-container"></div>
-    <div class="back-button" ng-hide="hideBackButton" ng-click="goToPage('/home')">
-        <webicon icon="material:clear"/>
-    </div>
+<body>
+    <header>
+        <h1>Macklin Hartley</h1>
+        <h2>Web Developer and User Experience Analyst</h2>
+
+        <ul class="social">
+            <li>
+                <a href="https://www.facebook.com/macklin.hartley" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/_tomacklin" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <a href="https://github.com/Macca2805" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/macklin-hartley-56b11875" target="_blank">LinkedIn</a>
+            </li>
+        </ul>
+    </header>
+    
+    <article>
+        <section>
+            <h2>About Me</h2>
+            <p>I am a Web Developer and User Experience Analyst hailing from Perth, Western Australia. I have a passion for creating
+                simple, accessible and exciting user experiences.</p>
+            <p>In my 5 years of experience, I've had the pleasure of contributing to large development teams and consulted among
+                a wide range of organisations.</p>
+        </section>
+        
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>KnockoutJS</li>
+                <li>AngularJS</li>
+                <li>Bootstrap</li>
+                <li>Responsive CSS</li>
+                <li>User Experience Design</li>
+                <li>C#</li>
+                <li>ASP.NET MVC</li>
+                <li>Entity Framework</li>
+                <li>Microsoft Azure</li>
+                <li>AutoFac Dependency Injection</li>
+                <li>GIT &amp; TFS</li>
+                <li>Domain Driven Design</li>
+                <li>Build Automation</li>
+                <li>Automated Deployments</li>
+                <li>Agile Delivery Experience</li>
+                <li>Problem solving</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Employment</h2>
+            <h3>
+                Cash Converters
+                <small>September 2016 - Present</small>
+            </h3>
+            <ul>
+                <li>Worked on a project to rebuild and enhance online services</li>
+                <li>Integrated 2FA into an online bank statement download service</li>
+                <li>Ran a presentation to management on the benefits of web accessibility</li>
+                <li>Integrated live chat system into online loan application platform</li>
+            </ul>
+            <h3>
+                NEC Australia
+                <small>September 2012</small>
+            </h3>
+            <ul>
+                <li>Developed an online portal for the Department of Water to manage water resources and licensing</li>
+                <li>Lead user-experience and accessibility analyst for online platform</li>
+                <li>Added change tracking feature to online retention and disposal application</li>
+                <li>Enhanced error handling for Word Document import service</li>
+                <li>Assisted in developing responsive stylesheets for mobile-first volunteer application for St John Ambulance</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Other Experience</h2>
+            <h3>
+                Web Accessibility In Practice
+                <small>Presentation for Localhost Meetup</small>
+            </h3>
+            <p>I gave a presentation to the Australian Web Industry Association meetup in August of 2016 on practical methods to design and test for accessibility from my experiences as an applications developer.</p>
+            <h3>
+                Street Shark
+                <small>GovHack 2016</small>
+            </h3>
+            <p>At GovHack I worked with a small team of friends to analyse crime location statistics from Sydney to build a predictive model that could be displayed using the Google Maps API. <a href="http://macklin.me/street-shark/">View here</a></p>
+            <h3>
+                HealthHack 2015
+                <small>UVBuddy Sun Exposure App</small>
+            </h3>
+            <p>I helped conceptualise and prototype an application for the Telethon Kids Institute intended to direct users in correct
+                UV exposure.</p>
+            <h3>
+                Telethon Kids Hackathon
+                <small>IThermal - Thermal Imaging Data Collection App</small>
+            </h3>
+            <p>With NEC and the Telethon Kids Institute, I worked in a team on a project aimed at utilising thermal cameras to detect
+                brown-fat percentages in children.</p>
+        </section>
+
+        <section>
+            <h2>Certification</h2>
+            <h3>
+                Microsoft Certified Software Developer
+                <small>Web Applications</small>
+            </h3>
+            <p>This certificate covers the basics of developing Web Applications using HTML5 with JavaScript and CSS3. It also explores
+                the web toolkit provided by Microsoft, including ASP.NET, MVC, Web Services, and Microsoft Azure.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>
+                Bachelor of Computer Science
+                <small>Curtin University</small>
+            </h3>
+            <p>During my time at Curtin University I fostered the skills required to communicate and manage my time effectively.
+                I graduated from Curtin University at the end of 2012.</p>
+        </section>
+
+    </article>
 </body>
 
 </html>

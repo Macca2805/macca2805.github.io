@@ -1,44 +1,22 @@
 /* Colors */
 
-$pc-100: 10%;
-$pc-300: 20%;
-$pc-500: 30%;
-$pc-700: 40%;
-$pc-900: 50%;
-
 $black: #000;
 $white: #fff;
 
+$foreground: $black;
 $background: $white;
-
-$greys: ();
-$tones: $pc-100, $pc-300, $pc-500, $pc-700, $pc-900;
-
-@each $t in $tones {
-    $ti: index($tones, $t);
-    $greys: append($greys, #{lighten($black, $t)});
-}
-
-$color-1: #e74c3c;
-$color-2: #F86624;
-$color-3: #f1c40f;
-$color-4: #52B788;
-$color-5: #3498db;
-$color-6: #9b59b6;
-
-$colors: $color-1, $color-2, $color-3, $color-4, $color-5, $color-6;
 
 $timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 /* Fonts */
 
-$font-body: "Work Sans", sans-serif;
-$font-heading: "Playfair Display", monospace;
+$font-body: "Carme", sans-serif;
+$font-heading: "Roboto Mono", monospace;
 
 /* Layout */
 
 body {
-    font-size: 130%;
+    font-size: 135%;
     overflow-y: scroll;
     background: $background;
     font-family: $font-body;
@@ -47,71 +25,28 @@ body {
     width: 100%;
     height: 100%;
     min-height: 100%;
-    letter-spacing: 0.025em;
+}
+
+header {
+    background: darken($background, 10%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(33% - 4em);
+    padding: 2em;
 }
 
 article {
-    color: $white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     position: absolute;
-    width: 100%;
-    min-height: 100%;
+    top: 0;
+    left: 33%;
+    width: calc(66% - 4em);
+    padding: 2em;
 }
 
 section {
-    padding: 4em;
-}
-
-@for $i from 1 through 36 {
-    header :nth-child(#{$i}),
-    section :nth-child(#{$i}) {
-        animation: document-animation #{500 + ($i * 50)}ms $timing-function;
-    }
-}
-
-/* Pages */
-
-.template-container.ng-enter,
-.template-container.ng-leave {
-    transition: all 500ms $timing-function;
-}
-
-.template-container.ng-enter {
-    opacity: 0;
-}
-.template-container.ng-enter.ng-enter-active {
-    opacity: 1;
-}
-
-.template-container.ng-leave {
-    opacity: 1;
-}
-.template-container.ng-leave.ng-leave-active {
-    opacity: 0;
-}
-
-$pages: 'about', 'skills', 'employment', 'experience', 'certification', 'education';
-@each $p in $pages {
-    $index: index($pages, $p);
-    article.#{$p} {
-        background: nth($colors, $index);
-        color: darken(nth($colors, $index), $pc-500);
-    }
-    
-    article.#{$p} h1, 
-    article.#{$p} h2 {
-        color: $black;
-    }
-    
-    article.#{$p} h3, 
-    article.#{$p} h4 {
-        color: darken(nth($colors, $index), $pc-700);
-    }
+    margin: 5em 0;
 }
 
 /* Headings */
@@ -120,38 +55,40 @@ h1,
 h2,
 h3,
 h4 {
+    font-family: $font-heading;
+    font-weight: 700;
     margin: 1em 0;
 }
 
 h1,
 h2 {
-    font-weight: 700;
-    font-family: $font-heading;
     letter-spacing: 0em;
 }
 
-h3,
-h4 {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 h1 {
-    font-size: 3.5em;
+    font-size: 2em;
     line-height: 1.05;
 }
 
-h2 {
-    font-size: 2.5em;
-    line-height: 1.25;
+h1::after {
+    height: 8px;
+    width: 30%;
+    background: $foreground;
+
 }
 
-h3 {
+h2 {
     font-size: 1.5em;
     line-height: 1.25;
 }
 
+h3 {
+    font-size: 1.25em;
+    line-height: 1.25;
+}
+
 h4 {
+    font-size: 1.1em;
     line-height: 1.22222222;
 }
 
@@ -162,174 +99,21 @@ small {
 }
 
 ul {
-    padding-left: 15px;
-    margin: 1em 0;
+    padding-left: 1em;
+    margin: 1em 0 2em 0;
 }
 
 li {
     margin: 0.5em 0;
 }
 
-@keyframes document-animation {
-    0% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-        
-    50% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    
-    100% {
-        opacity: auto;
-        transform: translateY(0);
-    }
-}
-
 /* Text */
 
 p {
-    margin: 1em 0;
+    margin: 1em 0 2.5em 0;
     line-height: 1.5em;
 }
 
-/* Back Button */
-
-.back-button,
-.back-button webicon {
-    width: 50px;
-    height: 50px;
-}
-
-.back-button {
-    position: fixed;
-    top: 2em;
-    right: 2em;
-    color: $black;
-}
-
-.back-button:hover {
-    cursor: pointer;
-}
-
-.back-button.hidden {
-    display: none;
-}
-
-/* Socials */
-
-ul.social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 1.5em 0;
-}
-
-ul.social > li > a {
-    padding: 1em;
-}
-
-ul.social > li > a webicon,
-ul.social > li > a:hover webicon {
-    color: lighten($background, $pc-500);
-}
-
-ul.social > li > a webicon {
-    width: 50px;
-    height: 50px;
-}
-
-/* Bubbles */
-
-.bubbles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
-.bubbles h1,
-.bubbles h2 {
-    margin: 0.5em 0 0;
-}
-
-.bubbles h1 {
-    color: $black;
-    font-size: 1.25em;
-}
-
-.bubbles h2 {
-    color: lighten($black, $pc-900);
-    font-size: 1em;
-    font-weight: normal;
-    font-family: $font-body;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.bubbles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 1.5em 0;
-}
-
-.bubbles > div {
-    color: $black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    width: 250px;
-    height: 250px;
-    margin: 15px;
-    border-radius: 0.25em;
-    border: 1px solid darken($white, $pc-100);
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0.24);
-    transition: all 500ms $timing-function;
-}
-
-.bubbles > div:hover {
-    box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-@each $c in $colors {
-    $index: index($colors, $c);
-    .bubbles > div:nth-child(#{$index}) {
-        //background: #{$c};
-        animation: bubble-animation #{750 + $index * 150}ms $timing-function;
-    }
-}
-
-@keyframes bubble-animation {
-    0% {
-        transform: scale(0);
-    }
-
-    50% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
 
 /* Skills */
 
@@ -343,60 +127,5 @@ ul.skills-list > li {
     display: inline-block;
     margin: 0 1em 1em 0;
     padding: 1em 2em;
-    color: $black;
-    background: lighten($color-2, $pc-100);
-}
-
-/* Repsonsive */
-
-@media (max-width: 64.5em) {
-    
-    body {
-        font-size: 120%;
-    }
-    
-    ul.bubbles > li {
-        width: 190px;
-        height: 190px;
-        font-size: 1em;
-    }
-}
-
-@media (max-width:56.25em) {
-    
-    body {
-        font-size: 110%;
-    }
-    
-    ul.bubbles > li {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .back-button,
-    .back-button webicon {
-        width: 25px;
-        height: 25px;
-    }
-
-    .back-button {
-        top: 1em;
-        right: 1em;
-    }
-}
-
-@media (max-width:43.75em) {    
-    
-    body {
-        font-size: 100%;
-    }
-    
-    section {
-        padding: 2em;
-    }
-    
-    ul.bubbles > li {
-        width: 125px;
-        height: 125px;
-    }
+    background: lighten($foreground, 85%);
 }
