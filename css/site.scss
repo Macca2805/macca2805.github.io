@@ -39,11 +39,10 @@ header {
 
     .bio-img {
         position: absolute;
-        top: 25%;
-        height: 75%;
+        height: 100%;
         width: 100%;
         background-image: url("../img/bio.jpg");
-        background-position: top center;
+        background-position: bottom center;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: $foreground;
@@ -205,11 +204,6 @@ ul.skills-list > li {
         position: relative;
         height: 30em;
         width: 100%;
-
-        .bio-img {
-            top: 20%;
-            height: 80%;
-        }
         
         .bio {        
 
