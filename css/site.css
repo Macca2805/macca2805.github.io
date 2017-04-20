@@ -28,6 +28,7 @@ header {
     width: 100%;
     background-image: url("../img/bio.jpg");
     background-position: top center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: #0032d2;
     mix-blend-mode: lighten;
@@ -69,11 +70,11 @@ h4 {
   font-weight: 700; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.05; }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: 1.25; }
 
 h3 {
@@ -144,3 +145,25 @@ ul.skills-list > li {
 @media screen and (max-width: 1300px) {
   body {
     font-size: 100%; } }
+
+@media screen and (max-width: 767px) {
+  header {
+    position: relative;
+    height: 30em;
+    width: 100%; }
+    header .bio-img {
+      top: 20%;
+      height: 80%; }
+    header .bio h1 {
+      margin: 0;
+      padding: 1em;
+      text-align: left; }
+  article {
+    position: relative;
+    left: 0;
+    width: 100%; }
+  ul.skills-list > li {
+    display: inline-block;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.5em 1em;
+    border: 1px solid #0032d2; } }
