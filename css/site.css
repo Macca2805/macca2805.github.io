@@ -113,6 +113,13 @@ ul.social {
   ul.social li {
     display: inline-block;
     padding: 0 1em 0 0; }
+    ul.social li a,
+    ul.social li a:hover,
+    ul.social li a:focus {
+      border: none; }
+    ul.social li img {
+      height: 3em;
+      width: 3em; }
 
 /* Skills */
 ul.skills-list {
