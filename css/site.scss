@@ -71,6 +71,10 @@ section {
     padding: 0 2em;
 }
 
+article > section:last-child {
+    padding-bottom: 4em;
+}
+
 /* Headings */
 
 h1,
@@ -79,7 +83,7 @@ h3,
 h4 {
     font-family: $font-heading;
     font-weight: 900;
-    margin: 1em 0;
+    margin: 1.5em 0 1em 0;
 }
 
 h1,
@@ -132,7 +136,7 @@ li {
 
 p {
     font-size: 0.9em;
-    margin: 1em 0 2.5em 0;
+    margin: 1em 0;
     line-height: 1.5em;
 }
 
