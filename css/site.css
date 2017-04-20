@@ -6,7 +6,7 @@ body {
   font-size: 135%;
   overflow-y: scroll;
   background: #fff;
-  font-family: "Source Code Pro", sans-serif;
+  font-family: "Fira Mono", monospace;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -23,8 +23,8 @@ header {
   width: 33%; }
   header .bio-img {
     position: absolute;
-    top: 35%;
-    height: 80%;
+    top: 25%;
+    height: 75%;
     width: 100%;
     background-image: url("../img/bio.jpg");
     background-position: top center;
@@ -33,11 +33,9 @@ header {
     mix-blend-mode: lighten;
     filter: brightness(100%) contrast(135%) saturate(150%) grayscale(1); }
   header .bio {
-    position: absolute;
-    top: 0;
-    padding: 2em; }
-    header .bio h1,
-    header .bio h2 {
+    width: 100%; }
+    header .bio h1 {
+      padding: 0 1em;
       text-align: right; }
 
 article {
@@ -47,15 +45,15 @@ article {
   width: 66%; }
 
 section {
-  padding: 2em 2em 0 2em; }
+  padding: 0 2em; }
 
 /* Headings */
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Work Sans", monospace;
-  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
   margin: 1em 0; }
 
 h1,

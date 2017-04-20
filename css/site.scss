@@ -10,8 +10,8 @@ $timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 /* Fonts */
 
-$font-body: "Source Code Pro", sans-serif;
-$font-heading: "Work Sans", monospace;
+$font-body: "Fira Mono", monospace;
+$font-heading: "Raleway", sans-serif;
 
 /* Layout */
 
@@ -39,8 +39,8 @@ header {
 
     .bio-img {
         position: absolute;
-        top: 35%;
-        height: 80%;
+        top: 25%;
+        height: 75%;
         width: 100%;
         background-image: url("../img/bio.jpg");
         background-position: top center;
@@ -51,12 +51,10 @@ header {
     }
     
     .bio {
-        position: absolute;
-        top: 0;
-        padding: 2em;
+        width: 100%;
 
-        h1,
-        h2 {
+        h1 {
+            padding: 0 1em;
             text-align: right;
         }
     }
@@ -70,7 +68,7 @@ article {
 }
 
 section {
-    padding: 2em 2em 0 2em;
+    padding: 0 2em;
 }
 
 /* Headings */
@@ -80,7 +78,7 @@ h2,
 h3,
 h4 {
     font-family: $font-heading;
-    font-weight: 700;
+    font-weight: 900;
     margin: 1em 0;
 }
 
