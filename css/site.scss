@@ -3,19 +3,20 @@
 $black: #000;
 $white: #fff;
 
-$foreground: $black;
+$foreground: rgb(0, 50, 210);
 $background: $white;
 
 $timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 /* Fonts */
 
-$font-body: "Carme", sans-serif;
-$font-heading: "Roboto Mono", monospace;
+$font-body: "Source Code Pro", sans-serif;
+$font-heading: "Work Sans", monospace;
 
 /* Layout */
 
 body {
+    color: $foreground;
     font-size: 135%;
     overflow-y: scroll;
     background: $background;
@@ -28,27 +29,36 @@ body {
 }
 
 header {
-    background: darken($background, 10%);
+    color: $background;
+    background: $foreground;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: calc(33% - 4em);
-    padding: 2em;
-}
+    width: 33%;
 
-header img.bio-img {
-    position: relative;
-    width: 100%;
-}
-
-header ul.social {
-    padding: 0;
-    list-style: none;
+    .bio-img {
+        position: absolute;
+        top: 35%;
+        height: 80%;
+        width: 100%;
+        background-image: url("../img/bio.jpg");
+        background-position: top center;
+        background-size: cover;
+        background-color: $foreground;
+        mix-blend-mode: lighten;
+        filter: brightness(100%) contrast(135%) saturate(150%) grayscale(1);
+    }
     
-    li {
-        padding: 15px;
-        float: left;
+    .bio {
+        position: absolute;
+        top: 0;
+        padding: 2em;
+
+        h1,
+        h2 {
+            text-align: right;
+        }
     }
 }
 
@@ -56,12 +66,11 @@ article {
     position: absolute;
     top: 0;
     left: 33%;
-    width: calc(66% - 4em);
-    padding: 2em;
+    width: 66%;
 }
 
 section {
-    margin: 5em 0;
+    padding: 2em 2em 0 2em;
 }
 
 /* Headings */
@@ -129,6 +138,23 @@ p {
     line-height: 1.5em;
 }
 
+a,
+a:hover,
+a:focus {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+ul.social {
+    padding: 0;
+    list-style: none;
+    
+    li {
+        display: inline-block;
+        padding: 0 1em 0 0;
+    }
+}
 
 /* Skills */
 
@@ -142,5 +168,12 @@ ul.skills-list > li {
     display: inline-block;
     margin: 0 1em 1em 0;
     padding: 1em 2em;
-    background: lighten($foreground, 85%);
+    border: 1px solid $foreground;
+}
+
+@media screen and (max-width:1300px) {
+
+    body {
+        font-size: 100%;
+    }
 }

@@ -2,10 +2,11 @@
 /* Fonts */
 /* Layout */
 body {
+  color: #0032d2;
   font-size: 135%;
   overflow-y: scroll;
   background: #fff;
-  font-family: "Carme", sans-serif;
+  font-family: "Source Code Pro", sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -13,41 +14,47 @@ body {
   min-height: 100%; }
 
 header {
-  background: #e6e6e6;
+  color: #fff;
+  background: #0032d2;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: calc(33% - 4em);
-  padding: 2em; }
-
-header img.bio-img {
-  position: relative;
-  width: 100%; }
-
-header ul.social {
-  padding: 0;
-  list-style: none; }
-  header ul.social li {
-    padding: 15px;
-    float: left; }
+  width: 33%; }
+  header .bio-img {
+    position: absolute;
+    top: 35%;
+    height: 80%;
+    width: 100%;
+    background-image: url("../img/bio.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-color: #0032d2;
+    mix-blend-mode: lighten;
+    filter: brightness(100%) contrast(135%) saturate(150%) grayscale(1); }
+  header .bio {
+    position: absolute;
+    top: 0;
+    padding: 2em; }
+    header .bio h1,
+    header .bio h2 {
+      text-align: right; }
 
 article {
   position: absolute;
   top: 0;
   left: 33%;
-  width: calc(66% - 4em);
-  padding: 2em; }
+  width: 66%; }
 
 section {
-  margin: 5em 0; }
+  padding: 2em 2em 0 2em; }
 
 /* Headings */
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Work Sans", monospace;
   font-weight: 700;
   margin: 1em 0; }
 
@@ -62,7 +69,7 @@ h1 {
 h1::after {
   height: 8px;
   width: 30%;
-  background: #000; }
+  background: #0032d2; }
 
 h2 {
   font-size: 1.5em;
@@ -93,6 +100,20 @@ p {
   margin: 1em 0 2.5em 0;
   line-height: 1.5em; }
 
+a,
+a:hover,
+a:focus {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid; }
+
+ul.social {
+  padding: 0;
+  list-style: none; }
+  ul.social li {
+    display: inline-block;
+    padding: 0 1em 0 0; }
+
 /* Skills */
 ul.skills-list {
   list-style: none;
@@ -103,4 +124,8 @@ ul.skills-list > li {
   display: inline-block;
   margin: 0 1em 1em 0;
   padding: 1em 2em;
-  background: #d9d9d9; }
+  border: 1px solid #0032d2; }
+
+@media screen and (max-width: 1300px) {
+  body {
+    font-size: 100%; } }
