@@ -60,17 +60,17 @@ h1,
 h2 {
   letter-spacing: 0em; }
 
+h3,
+h4 {
+  font-family: "Fira Mono", monospace;
+  font-weight: 700; }
+
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.05; }
 
-h1::after {
-  height: 8px;
-  width: 30%;
-  background: #0032d2; }
-
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1.25; }
 
 h3 {
