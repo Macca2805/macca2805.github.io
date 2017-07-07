@@ -6,7 +6,7 @@ body {
   font-size: 135%;
   overflow-y: scroll;
   background: #fff;
-  font-family: "Fira Mono", monospace;
+  font-family: "Roboto", monospace;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -31,7 +31,7 @@ header {
     background-size: cover;
     background-color: #0032d2;
     mix-blend-mode: lighten;
-    filter: brightness(100%) contrast(135%) saturate(150%) grayscale(1); }
+    filter: brightness(140%) contrast(90%) saturate(150%) grayscale(1); }
   header .bio {
     width: 100%; }
     header .bio h1 {
@@ -55,7 +55,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-weight: 900;
   margin: 1.5em 0 1em 0; }
 
@@ -65,12 +65,14 @@ h2 {
 
 h3,
 h4 {
-  font-family: "Fira Mono", monospace;
+  font-family: "Roboto", monospace;
   font-weight: 700; }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.05; }
+  h1 small {
+    font-size: 0.5em; }
 
 h2 {
   font-size: 1.75em;
@@ -148,8 +150,10 @@ ul.skills-list > li {
 @media screen and (max-width: 767px) {
   header {
     position: relative;
-    height: 30em;
+    height: 20em;
     width: 100%; }
+    header .bio .bio-img {
+      background-position: center center; }
     header .bio h1 {
       margin: 0;
       padding: 1em;
