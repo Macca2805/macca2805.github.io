@@ -45,7 +45,7 @@ article {
   width: 66%; }
 
 section {
-  padding: 0 2em; }
+  padding: 0 1em; }
 
 article > section:last-child {
   padding-bottom: 4em; }
@@ -69,13 +69,13 @@ h4 {
   font-weight: 700; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   line-height: 1.05; }
   h1 small {
     font-size: 0.5em; }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
   line-height: 1.25; }
 
 h3 {
@@ -150,10 +150,10 @@ ul.skills-list > li {
 @media screen and (max-width: 767px) {
   header {
     position: relative;
-    height: 20em;
+    height: 21em;
     width: 100%; }
-    header .bio .bio-img {
-      background-position: center center; }
+    header .bio-img {
+      background-position: top center; }
     header .bio h1 {
       margin: 0;
       padding: 1em;

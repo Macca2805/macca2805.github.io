@@ -68,7 +68,7 @@ article {
 }
 
 section {
-    padding: 0 2em;
+    padding: 0 1em;
 }
 
 article > section:last-child {
@@ -98,7 +98,7 @@ h4 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     line-height: 1.05;
 
     small {
@@ -107,7 +107,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 2em;
     line-height: 1.25;
 }
 
@@ -206,11 +206,11 @@ ul.skills-list > li {
 
     header {
         position: relative;
-        height: 20em;
+        height: 21em;
         width: 100%;
 
         .bio-img {
-            background-position: center center;
+            background-position: top center;
         }
 
         .bio {
