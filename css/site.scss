@@ -3,20 +3,21 @@
 $black: #000;
 $white: #fff;
 
-$foreground: #0032d2;
+$primary: #1e1e1e;
+$secondary: #0032d2;
 $background: $white;
 
 $timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
 /* Fonts */
 
-$font-body: "Roboto", sans-serif;
+$font-body: "Work Sans", sans-serif;
 $font-heading: "Krona One", sans-serif;
 
 /* Layout */
 
 body {
-    color: $foreground;
+    color: $primary;
     font-size: 135%;
     overflow-y: scroll;
     background: $background;
@@ -28,9 +29,14 @@ body {
     min-height: 100%;
 }
 
+@media screen and (max-width:1300px) {
+    body {
+        font-size: 100%;
+    }
+}
+
 header {
-    color: $background;
-    background: $foreground;
+    background: $primary;
     position: fixed;
     top: 0;
     left: 0;
@@ -42,33 +48,65 @@ header {
         height: 100%;
         width: 100%;
         background-image: url("../img/bio.jpg");
-        background-position: bottom center;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: $foreground;
+        background-color: $primary;
         mix-blend-mode: lighten;
-        filter: brightness(140%) contrast(90%) saturate(150%) grayscale(1);
+        filter: brightness(130%) contrast(100%) saturate(130%) grayscale(1);
     }
 
     .bio {
         width: 100%;
-
-        h1 {
-            padding: 0 1em;
-            text-align: right;
-        }
     }
 }
 
+@media screen and (max-width:767px) {    
+    header {
+        position: relative;
+        height: 24em;
+        width: 100%;
+
+        .bio-img {
+            background-position: center center;
+        }
+
+        .bio {
+
+            h1 {
+                margin: 0;
+                padding: 1em;
+                text-align: left;
+            }
+        }
+    }
+} 
+
 article {
+    padding: 3em 0 0 0;
     position: absolute;
     top: 0;
     left: 33%;
     width: 67%;
 }
 
+@media screen and (max-width:767px) {   
+    article {
+        padding: 0;
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+}
+
 section {
     padding: 0 3.5em;
+}
+
+@media screen and (max-width:767px) {
+    section {
+        padding: 0 1.5em;
+    }
 }
 
 article > section:last-child {
@@ -83,7 +121,8 @@ h3,
 h4 {
     font-family: $font-heading;
     font-weight: bold;
-    margin: 2em 0 1em 0;
+    margin: 1em 0;
+    line-height: 1.25;
 }
 
 h3,
@@ -94,7 +133,6 @@ h4 {
 
 h1 {
     font-size: 3em;
-    line-height: 1.05;
 
     small {
         font-size: 0.5em;
@@ -107,12 +145,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.4em;
     line-height: 1.25;
 }
 
 h4 {
-    font-size: 1.1em;
+    font-size: 1.25em;
     line-height: 1.22222222;
 }
 
@@ -120,6 +158,12 @@ small {
     margin: 0.6em 0;
     display: block;
     font-weight: 400;
+}
+
+@media screen and (max-width:767px) {
+    h1, h2, h3, h4, p {
+        margin: 0.5em 0;
+    }
 }
 
 ul {
@@ -146,13 +190,12 @@ p.lead {
 img.responsive {
     display: block;
     margin: 0;
-    padding: 1em 0;
+    padding: 0.25em 0;
     width: auto;
     max-width: 75%;
 }
 
-@media screen and (max-width:767px) {
-
+@media screen and (max-width:1300px) {
     img.responsive {
         max-width: 100%;
     }
@@ -161,6 +204,7 @@ img.responsive {
 a,
 a:hover,
 a:focus {
+    color: $secondary;
     font-weight: bold;
     text-decoration: none;
     border-bottom: 1px solid;
@@ -199,47 +243,14 @@ ul.skills-list > li {
     display: inline-block;
     margin: 0 1em 1em 0;
     padding: 1em 2em;
-    border: 1px solid $foreground;
+    border: 1px solid $primary;
 }
 
-@media screen and (max-width:1300px) {
-
-    body {
-        font-size: 100%;
-    }
-}
-
-@media screen and (max-width:767px) {
-
-    header {
-        position: relative;
-        height: 21em;
-        width: 100%;
-
-        .bio-img {
-            background-position: top center;
-        }
-
-        .bio {
-
-            h1 {
-                margin: 0;
-                padding: 1em;
-                text-align: left;
-            }
-        }
-    }
-
-    article {
-        position: relative;
-        left: 0;
-        width: 100%;
-    }
-
+@media screen and (max-width:767px) {   
     ul.skills-list > li {
         display: inline-block;
         margin: 0 0.5em 0.5em 0;
         padding: 0.5em 1em;
-        border: 1px solid $foreground;
+        border: 1px solid $primary;
     }
-}
+}   
