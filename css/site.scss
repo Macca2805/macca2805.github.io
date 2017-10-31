@@ -1,11 +1,8 @@
 /* Colors */
 
-$black: #000;
-$white: #fff;
-
-$primary: #1e1e1e;
-$secondary: #0032d2;
-$background: $white;
+$primary: #16315e;
+$secondary: darken($primary, 10%);
+$background: #F2F1EF;
 
 $timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
@@ -36,7 +33,7 @@ body {
 }
 
 header {
-    background: $primary;
+    background: $secondary;
     position: fixed;
     top: 0;
     left: 0;
@@ -51,9 +48,9 @@ header {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: $primary;
+        background-color: $secondary;
         mix-blend-mode: lighten;
-        filter: brightness(130%) contrast(100%) saturate(130%) grayscale(1);
+        filter: brightness(150%) contrast(80%) saturate(130%) grayscale(1);
     }
 
     .bio {
@@ -92,7 +89,6 @@ article {
 
 @media screen and (max-width:767px) {   
     article {
-        padding: 0;
         position: relative;
         left: 0;
         width: 100%;
@@ -123,6 +119,7 @@ h4 {
     font-weight: bold;
     margin: 1em 0;
     line-height: 1.25;
+    color: $secondary;
 }
 
 h3,
@@ -132,7 +129,7 @@ h4 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 
     small {
         font-size: 0.5em;
@@ -140,7 +137,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1.25;
 }
 

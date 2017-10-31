@@ -2,10 +2,10 @@
 /* Fonts */
 /* Layout */
 body {
-  color: #1e1e1e;
+  color: #16315e;
   font-size: 135%;
   overflow-y: scroll;
-  background: #fff;
+  background: #F2F1EF;
   font-family: "Work Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
     font-size: 100%; } }
 
 header {
-  background: #1e1e1e;
+  background: #0c1b35;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,9 +32,9 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #1e1e1e;
+    background-color: #0c1b35;
     mix-blend-mode: lighten;
-    filter: brightness(130%) contrast(100%) saturate(130%) grayscale(1); }
+    filter: brightness(150%) contrast(80%) saturate(130%) grayscale(1); }
   header .bio {
     width: 100%; }
 
@@ -59,7 +59,6 @@ article {
 
 @media screen and (max-width: 767px) {
   article {
-    padding: 0;
     position: relative;
     left: 0;
     width: 100%; } }
@@ -82,7 +81,8 @@ h4 {
   font-family: "Krona One", sans-serif;
   font-weight: bold;
   margin: 1em 0;
-  line-height: 1.25; }
+  line-height: 1.25;
+  color: #0c1b35; }
 
 h3,
 h4 {
@@ -90,12 +90,12 @@ h4 {
   font-weight: bold; }
 
 h1 {
-  font-size: 3em; }
+  font-size: 2.5em; }
   h1 small {
     font-size: 0.5em; }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 1.25; }
 
 h3 {
@@ -145,7 +145,7 @@ img.responsive {
 a,
 a:hover,
 a:focus {
-  color: #0032d2;
+  color: #0c1b35;
   font-weight: bold;
   text-decoration: none;
   border-bottom: 1px solid; }
@@ -174,11 +174,11 @@ ul.skills-list > li {
   display: inline-block;
   margin: 0 1em 1em 0;
   padding: 1em 2em;
-  border: 1px solid #1e1e1e; }
+  border: 1px solid #16315e; }
 
 @media screen and (max-width: 767px) {
   ul.skills-list > li {
     display: inline-block;
     margin: 0 0.5em 0.5em 0;
     padding: 0.5em 1em;
-    border: 1px solid #1e1e1e; } }
+    border: 1px solid #16315e; } }
