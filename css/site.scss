@@ -1,8 +1,8 @@
 /* Colors */
 
-$primary: #16315e;
-$secondary: darken($primary, 10%);
-$background: #F2F1EF;
+$primary: #aaa;
+$secondary: #fff;
+$background: #000;
 
 $timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 
@@ -49,8 +49,8 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
         background-color: $secondary;
-        mix-blend-mode: lighten;
-        filter: brightness(150%) contrast(80%) saturate(130%) grayscale(1);
+        mix-blend-mode: darken;
+        filter: brightness(125%) contrast(125%) grayscale(1);
     }
 
     .bio {
@@ -106,7 +106,7 @@ section {
 }
 
 article > section:last-child {
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 }
 
 /* Headings */
@@ -159,7 +159,7 @@ small {
 
 @media screen and (max-width:767px) {
     h1, h2, h3, h4, p {
-        margin: 0.5em 0;
+        margin: 1em 0 0.5em;
     }
 }
 
