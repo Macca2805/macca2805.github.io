@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Krona+One|Work+Sans:500+700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Lato&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/site.css" />
@@ -15,64 +15,89 @@
 <body>
     <header>
         <div class="bio-img"></div>
-        <div class="bio">            
+        <div class="bio">
         </div>
     </header>
-    
+
     <article>
         <section>
             <h1>
                 Macklin Hartley
-                <small>Web Developer &amp;<br/>User Experience Analyst</small>
+                <small>Specialist Software Engineering and User Experience Analyst</small>
             </h1>
-            <p class="lead">I am a Web Developer and User Experience Analyst from Perth, Western Australia. I have a passion for creating
-                simple, accessible and exciting user experiences. In my 5 years of experience, I've had the pleasure of contributing to large development teams and consulted among
-                a wide range of organisations.</p>
+            <p class="lead">I am a Software Developer with over 7 years of experience building highly scalable
+                distributed systems. I'm am passionate for modern design patterns and architectures such as Domain
+                Driven Design, Event Sourcing and CQRS.</p>
+            <p class="lead">I am an advocate for creating cultures of ownership, accountability, transparency and trust.
+                I'm a strong believer in the value of continuous delivery, and deploying software frequently with a high
+                degree of automation.</p>
+            <p class="lead">In my spare time I love mentoring and volunteering my time to helping others grow. I've had
+                the opportunity to speak at DDD Perth, a local tech conference. I have also volunteered my time and
+                expertise on a number of occasions at Perth Web Girls and other mentoring meetups.</p>
         </section>
-        
+
         <section>
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li>HTML5</li>
-                <li>SASS</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Knockout</li>
-                <li>NodeJS</li>
-                <li>Jekyll</li>
-                <li>Responsive Design</li>
-                <li>UX Design</li>
+                <li>Kubernetes</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>Microservices</li>
+                <li>UI/UX Design</li>
+                <li>Payments Processing</li>
+                <li>Node.JS</li>
+                <li>Typescript</li>
+                <li>React.JS</li>
+                <li>Java</li>
+                <li>.NET</li>
                 <li>C#</li>
-                <li>ASP.NET MVC</li>
-                <li>.NET Core</li>
-                <li>Entity Framework</li>
-                <li>Azure</li>
-                <li>AutoFac</li>
-                <li>Git</li>
-                <li>Github</li>
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>Domain Driven Design</li>
-                <li>Build Automation</li>
+                <li>Event Sourcing</li>
+                <li>Distributed Systems</li>
+                <li>CQRS</li>
                 <li>Continuous Delivery</li>
+                <li>Software Architecture & Design</li>
             </ul>
         </section>
-        
+
         <section>
             <h2>Employment</h2>
             <h3>
-                Cash Converters
-                <small>September 2016 - Present</small>
+                Senior Engineer - VGW
+                <small>May 2018 - Present</small>
             </h3>
             <ul>
-                <li>Developed new platform for online application process using ASP.Net Core API’s and a cutting-edge ReactJS front-end.</li>
-                <li>Redeveloped tool for gathering supporting documents for applicants, improving speed, uptime and redundancy.</li>
+                <li>Worked with the back-office and payments engineering teams to develop reliable and secure
+                    centralised microservices.</li>
+                <li>Helped to build a robust and scalable payments processing architecture atop Kubernetes hosted on
+                    Amazon's EKS platform that handled over US$350m in payments per year.</li>
+                <li>Implemented low latency metrics and observability tools for ensuring the availability and
+                    reliability of payments processing, achieving an availability of over 99.95%.</li>
+                <li>Designed a credit card routing platform to optimise for authorisation rate and fee structure based
+                    on various factors including BIN ranges, applying an benefit of up to US$30m in yearly revenue.</li>
+                <li>Helped advocate for culture of continuous delivery, creating a platform that enabled teams to deploy
+                    releases frequently (100+ deployments/month) with a high degree of automation.</li>
+                <li>Designed the organisation’s first service level agreement, setting the bar for a culture of
+                    ownership, accountability, transparency and trust.</li>
+            </ul>
+            <h3>
+                Developer - Cash Converters
+                <small>September 2016 - May 2018</small>
+            </h3>
+            <ul>
+                <li>Developed new platform for online application process using ASP.Net Core API’s and a cutting-edge
+                    ReactJS front-end.</li>
+                <li>Redeveloped tool for gathering supporting documents for applicants, improving speed, uptime and
+                    redundancy.</li>
                 <li>Integrated live chat system and 2FA into existing applications.</li>
-                <li>Developed a prototype for a next-generation CMS using Jekyll static site generator and presented findings to the team.</li>
+                <li>Developed a prototype for a next-generation CMS using Jekyll static site generator and presented
+                    findings to the team.</li>
                 <li>Ran presentations to senior management on the benefits of web accessibility.</li>
             </ul>
             <h3>
-                NEC Australia
+                Developer - NEC Australia
                 <small>September 2012</small>
             </h3>
             <ul>
@@ -80,63 +105,78 @@
                 <li>Lead user-experience and accessibility analyst for online platform</li>
                 <li>Added change tracking feature to online retention and disposal application</li>
                 <li>Enhanced error handling for Word Document import service</li>
-                <li>Assisted in developing responsive stylesheets for mobile-first volunteer application for St John Ambulance</li>
+                <li>Assisted in developing responsive stylesheets for mobile-first volunteer application for St John
+                    Ambulance</li>
             </ul>
-            <h3>
-                "Crushed It"
-                <small>2010-2011</small>
-                <img class="responsive" src="/img/crushedit.gif" />
-            </h3>
         </section>
 
         <section>
             <h2>Other Experience</h2>
             <h3>
+                Every Good Outage Starts with a Queue
+                <small>DDD Perth 2019</small>
+            </h3>
+            <img class="responsive" src="img/ddd.jpeg" />
+            <p>I was nominated to present my talk 'Every Good Outage Starts with a
+                Queue’ at the DDD Perth 2019 conference. The talk covered my experiences with the subtle complexities of
+                distributed software
+                engineering.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZurB1gCVP8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>
+                <a
+                    href="https://docs.google.com/presentation/d/1hkwOsv_WBEgkPQ2vQia6sr013slhcL30ov9M7FjZ7G8/pub?start=false&loop=false&delayms=3000">
+                    View the slides here
+                </a>
+            </p>
+            <h3>
                 Web Accessibility In Practice
                 <small>Presentation for Localhost Meetup</small>
             </h3>
             <img class="responsive" src="img/localhost.jpg" />
-            <p>I gave a presentation to the Localhost PER meetup in August of 2016 on practical methods to design and test for accessibility from my experiences as an applications developer.</p>
-            <p><a href="https://docs.google.com/presentation/d/1hkwOsv_WBEgkPQ2vQia6sr013slhcL30ov9M7FjZ7G8/pub?start=false&loop=false&delayms=3000">Watch the slides here</a></p>
+            <p>I gave a presentation to the Localhost PER meetup in August of 2016 on practical methods to design and
+                test for accessibility from my experiences as an applications developer.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fxtZCsEoB3E" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>
+                <a
+                    href="https://docs.google.com/presentation/d/1hkwOsv_WBEgkPQ2vQia6sr013slhcL30ov9M7FjZ7G8/pub?start=false&loop=false&delayms=3000">
+                    View the slides here
+                </a>
+            </p>
             <h3>
                 GovHack 2017
                 <small>Collaborate Metrics</small>
             </h3>
             <img class="responsive" src="img/govhack17.jpg" />
-            <p>At GovHack 2017 I worked with a group of friends to build a metric for collaboration based off the IP Government Open Data initiative. We used records of successful patent applications with more than one applicant in order to build a 'collaboration score' and mapped the scores to administrative regions across Australia.</p>
-            <p>On October 14th 2017, our project won the <a href="https://govhack.org/media-hub/in-the-news/media-release-red-carpet-award-marketplaces-hack/">Marketplaces Hack</a> award at the National GovHack Red Carpet Awards.</p>
+            <p>At GovHack 2017 I worked with a group of friends to build a metric for collaboration based off
+                the IP
+                Government Open Data initiative. We used records of successful patent applications with more
+                than one
+                applicant in order to build a 'collaboration score' and mapped the scores to administrative
+                regions
+                across Australia.</p>
+            <p>On October 14th 2017, our project won the <a
+                    href="https://govhack.org/media-hub/in-the-news/media-release-red-carpet-award-marketplaces-hack/">Marketplaces
+                    Hack</a> award at the National GovHack Red Carpet Awards.</p>
             <p><a href="https://github.com/Macca2805/collaboration-metrics">Read about the project here</a></p>
-            <p><a href="http://macklin.me/collaboration-metrics/">View a live demo here</a></p>            
+            <p><a href="http://macklin.me/collaboration-metrics/">View a live demo here</a></p>
             <h3>
-                GovHack 2016
-                <small>Street Shark</small>
+                DDD Perth
+                <small>UX/UI work</small>
             </h3>
-            <img class="responsive" src="img/govhack16.jpg" />
-            <p>At GovHack 2016 I worked with a small team to analyse crime location statistics from Sydney to build a predictive model that could be displayed using the Google Maps API.</p>
-            <p><a href="https://github.com/Macca2805/street-shark">Read about the project here</a></p>
-            <p><a href="http://macklin.me/street-shark/">View a live demo here</a></p>
+            <p>I assisted in improving the accessibility and user experience of the <a href="https://dddperth.com/">DDD
+                    Perth website.</a></p>
             <h3>
-                HealthHack 2015
-                <small>UVBuddy Sun Exposure App</small>
+                Perth Web Girls
+                <small>Mentoring</small>
             </h3>
-            <p>I helped conceptualise and prototype an application for the Telethon Kids Institute intended to direct users in correct
-                UV exposure.</p>
-            <h3>
-                Telethon Kids Hackathon
-                <small>IThermal - Thermal Imaging Data Collection App</small>
-            </h3>
-            <p>With NEC and the Telethon Kids Institute, I worked in a team on a project aimed at utilising thermal cameras to detect
-                brown-fat percentages in children.</p>
-        </section>
-
-        <section>
-            <h2>Certification</h2>
-            <h3>
-                Microsoft Certified Software Developer
-                <small>Web Applications</small>
-            </h3>
-            <p>This certificate covers the basics of developing Web Applications using HTML5 with JavaScript and CSS3. It also explores
-                the web toolkit provided by Microsoft, including ASP.NET, MVC, Web Services, and Microsoft Azure.</p>
+            <p>
+                I have twice volunteered my time and experience to mentor women learning how to write code using
+                Python and Javascript.
+            </p>
         </section>
 
         <section>
@@ -145,32 +185,47 @@
                 Bachelor of Computer Science
                 <small>Curtin University</small>
             </h3>
-            <p>During my time at Curtin University I fostered the skills required to communicate and manage my time effectively.
-                I graduated from Curtin University at the end of 2012.</p>
+            <p>During my time at Curtin University I fostered the skills required to communicate and manage my time
+                effectively. I graduated from Curtin University at the end of 2012.</p>
         </section>
 
         <section>
             <h2>Contact Me</h2>
-                
             <ul class="social">
                 <li>
                     <a href="https://twitter.com/macklin_hartley" target="_blank">
-                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                        <svg fill="#2d3436" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                        </svg>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/Macca2805" target="_blank">
-                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <svg fill="#2d3436" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/macklin-hartley-56b11875" target="_blank">
-                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+                        <svg fill="#2d3436" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                        </svg>
                     </a>
                 </li>
                 <li>
                     <a href="mailto:mail@macklin.me">
-                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+                        <svg fill="#2d3436" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+                        </svg>
                     </a>
                 </li>
             </ul>
